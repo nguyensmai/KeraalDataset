@@ -19,7 +19,7 @@ The code includes a python notebook to visualise the skeleton data, and the libr
 
 Please cite this dataset with the following citation :
 
-@article{cite-key,
+    @article{cite-key,
 	author = {de Mauroy, Jean C. and Blanchard, Agathe and Nguyen, Sao Mai and Devanne, Maxime and Simonnet, Mathieu and Le Goff-Pronost, Myriam and Remy-Neris, Olivier},
 	journal = {BioMed Research International},
 	pages = {5667223},
