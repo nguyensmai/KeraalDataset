@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+
+<annotation-spec>
+
+<body>
+  <track-spec name="Global evaluation" type="primary" color-attr="evaluation">
+    <attribute name="evaluation" emptyvalue="false" defaultvalue="Correct">
+      <value-el color="green">Correct</value-el>
+      <value-el color="red">Incorrect</value-el>
+      <value-el color="yellow">Incomplete</value-el>
+      <value-el color="pink">Motionless</value-el>
+    </attribute>
+  </track-spec>
+  <track-spec name="Global error" type="primary" color-attr="type">
+    <attribute name="type" emptyvalue="false" defaultvalue="none">
+      <value-el color="#ED7F10">none</value-el>
+      <value-el color="#ED7F10">Error1</value-el>
+      <value-el color="#ED7F10">Error2</value-el>
+	  <value-el color="#ED7F10">Error3</value-el>
+	  <value-el color="#ED7F10">Other</value-el>
+    </attribute>
+	<attribute name="Evaluation">
+      <value-el color="#dd5500">SmallError</value-el>
+      <value-el color="#ee00ee">LargeError</value-el>
+    </attribute>
+    <attribute name="bodyPart">
+      <value-el color="#dd5500">LeftArm</value-el>
+      <value-el color="#ee00ee">RightArm</value-el>
+	  <value-el color="#ee00ee">BothArms</value-el>
+	  <value-el color="#ee00ee">Spine</value-el>
+    </attribute>
+  </track-spec>
+  <track-spec name="Temporal error" type="primary">
+    <attribute name="type">
+      <value-el color="#dd5500">Error1</value-el>
+      <value-el color="#ee00ee">Error2</value-el>
+	  <value-el color="#ee00ee">Error3</value-el>
+	  <value-el color="#ee00ee">Other</value-el>
+    </attribute>
+	<attribute name="Evaluation">
+      <value-el color="#dd5500">SmallError</value-el>
+      <value-el color="#ee00ee">LargeError</value-el>
+    </attribute>
+    <attribute name="bodyPart">
+      <value-el color="#dd5500">LeftArm</value-el>
+      <value-el color="#ee00ee">RightArm</value-el>
+	  <value-el color="#ee00ee">BothArms</value-el>
+	  <value-el color="#ee00ee">Spine</value-el>
+    </attribute>
+  </track-spec>
+
+</body>
+
+</annotation-spec>

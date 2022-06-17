@@ -1,10 +1,13 @@
-# Code for Keraal Dataset
-
-The Keraal dataset is a medical database of clinical patients carrying out low back-pain rehabilitation exercises.
-This repository  includes the accompagnying code and the documentation for the Keraal Dataset.
+# KinesiothErapy and Rehabilitation for Assisted Ambient Living (KERAAL) Dataset
 
 
-# Dataset files
+## Code for Keraal Dataset
+
+The Keraal dataset is a medical database of clinical patients carrying out low back-pain rehabilitation exercises. It can be downloaded and more information can be read in http://nguyensmai.free.fr/KeraalDataset.html.
+This repository  includes the accompanying code and the documentation for the Keraal Dataset.
+
+
+## Dataset files
 
 The dataset includes RGB video and skeleton files : from the kinect, the vicon, open-pose and blazepose. It also includes annotation files from 5 annotators.  
 The files constituting the dataset are described in readme_files_description.txt.
@@ -18,26 +21,37 @@ Our dataset is composed of :
 * the 2D positions of each joint of the OpenPose skeleton in the COCO pose output format. The txt files give the x and y positions on each video frame in the format of a dictionary of video frame numbers and joint names.
 * the positions and orientations of each joint of the Vicon skeleton.  The txt files display in a table,  a line per timestamp.
     
-#Draw Skeleton Code
+## Draw Skeleton Code
 
-The draw_skeleton code includes a python notebook to visualise the skeleton data, and the library code.
+The draw_skeleton folder includes  code such as a python notebook to visualise the skeleton data, and the library code.
+Please download the pretrained open_pose model pose_model.pth beforehand. (available on http://nguyensmai.free.fr/data/pose_model.pth)
+
+
+## Analyse Skeleton Code
+
+The get_skeletons_from_videos folder includes python code to use open_pose on the RGB videos to extract the open_pose skeletons.
 Please download the pretrained open_pose model pose_model.pth beforehand.
 
-#Analyse Skeleton Code
+## Annotation files
 
-The analyse_skeleton code includes python code to use open_pose on the RGB videos to extract the open_pose skeletons.
-Please download the pretrained open_pose model pose_model.pth beforehand.
+The annotate_videos folder has information for the annotation. The folder contains :
 
+* keraalSpec.xml : defines the template of the annotations
+* createAnvil.py : a python code to create template annotation files to be edited with Anvil for each video in a given folder
+* LabellisationDesVideos_fr.pdf : an explanation in French of the labels used in Keraal Dataset.
 
-# Citation
+## Citation
 
 Please cite this dataset with the following citation :
 
-    @article{cite-key,
-	author = {de Mauroy, Jean C. and Blanchard, Agathe and Nguyen, Sao Mai and Devanne, Maxime and Simonnet, Mathieu and Le Goff-Pronost, Myriam and Remy-Neris, Olivier},
+
+@article{Blanchard2022BRI,
+	author = {Agathe Blanchard and Sao Mai Nguyen and Maxime Devanne and Mathieu Simonnet and Myriam Le Goff-Pronost and Olivier Remy-Neris},
 	journal = {BioMed Research International},
-	pages = {5667223},
+	month = {mar},
+	pages = {1--10},
 	title = {Technical Feasibility of Supervision of Stretching Exercises by a Humanoid Robot Coach for Chronic Low Back Pain: The R-COOL Randomized Trial},
 	volume = {2022},
-	year = {2022}}
+	year = 2022}
+
  
