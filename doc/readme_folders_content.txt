@@ -1,22 +1,27 @@
 # KinesiothErapy and Rehabilitation for Assisted Ambient Living (KERAAL) Dataset : Folders Content
  
-    
-# Draw Skeleton Folder
+
+## Doc folder    
+
+The doc folder contains documentation about the contents of each folder and the format used in the data files of Keraal dataset.
+
+## Draw Skeleton folder
 
 The draw_skeleton folder includes :
 * keraalDataset_draw_skeleton.ipynb : as a python notebook to visualise the skeleton data, 
 * dataSampleKeraal folder:  contains the skeleton data files,
 * lib folder : the library code.
 
-Please download the pretrained open_pose model pose_model.pth beforehand. (available on http://nguyensmai.free.fr/data/pose_model.pth)
 
+## Get Skeletons From Videos Folder
 
-## Analyse Skeleton Code
+The get_skeletons_from_videos folder includes python code to use open_pose on the RGB videos to extract the open_pose skeletons:
 
-The get_skeletons_from_videos folder includes python code to use open_pose on the RGB videos to extract the open_pose skeletons.
-Please download the pretrained open_pose model pose_model.pth beforehand.
+* requirements.txt : required libraries
+* get_blazepose_skeleton.py : to process the BlazePose skeleton  from all videos and output json files* get_openpose_skeleton.py : to process the OpenPose skeleton  from all videos and output json files
+Please download the pretrained open_pose model pose_model.pth beforehand(available on http://nguyensmai.free.fr/data/pose_model.pth). 
 
-## Annotation files
+## Annotate Videos folder
 
 The annotate_videos folder has information for the annotation. The folder contains :
 
