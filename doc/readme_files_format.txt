@@ -107,10 +107,10 @@ x_pos y_pos z_pos x_quat y_quat z_quat w_quat
 Each joint's position and quaternion is concatenated according to the order described in 2.2
 
 
-3. OpenPose and Blazepose
+3. OpenPose 
 
-3.1. Coco Model
-The OpenPose and BlazePose skeleton used is the COCO model, from which we have recorded the following joints:
+3.1. Coco Model for OpenPose
+The OpenPose skeleton used is the COCO model, from which we have recorded the following joints:
 0. Head
 1. mShoulder
 2. rShoulder
@@ -126,9 +126,56 @@ The OpenPose and BlazePose skeleton used is the COCO model, from which we have r
 12. lKnee
 13. lAnkle
 
-3.2. OpenPose and Blzepose files
+3.2. OpenPose joints
 Each file corresponds to a motion sequence. within the file, is a dictionary of positions. The second level of dictionary is the video frame number. The third level of the dictionary is the joint name. For each joint is a 2D position :
 x_pos, y_pos
 
-4.Control command files of the robot Poppy to demonstrate the three exercises.
+
+4. BlazePose 
+
+3.1.  33 human body keypoints for BlazePose
+The BlazePose skeleton used is a new topology of 33 human body keypoints, which is a superset of COCO, 
+BlazeFace and BlazePalm topologies, from which we have recorded the following joints:
+ Nose 
+ Left_eye_inner 
+ Left_eye 
+ Left_eye_outer 
+ Right_eye_inner 
+ Right_eye 
+ Right_eye_outer 
+ Left_ear 
+ Right_ear 
+ Mouth_left 
+ Mouth_right 
+ Left_shoulder 
+ Right_shoulder 
+ Left_elbow 
+ Right_elbow 
+ Left_wrist 
+ Right_wrist 
+ Left_pinky 
+ Right_pinky 
+ Left_index 
+ Right_index 
+ Left_thumb 
+ Right_thumb 
+ Left_hip 
+ Right_hip 
+ Left_knee 
+ Right_knee 
+ Left_ankle 
+ Right_ankle 
+ Left_heel 
+ Right_heel 
+ Left_foot_index 
+ Right_foot_index 
+
+3.2. BlazePose joints
+Each file corresponds to a motion sequence. within the file, is a dictionary of positions. The second level of dictionary is the video frame number. The third level of the dictionary is the joint name. For each joint is a 3D position :
+x_pos, y_pos, z_pos
+Where z_pos represents the depth with respect to the video plane.
+
+
+5. Control command files of the robot Poppy to demonstrate the three exercises.
+
 They are json files that use the syntax commonly used by the library pypot as described in its documentation (https://docs.poppy-project.org/en/programming/python.html) and can be used with the web-interface developed by the project Keraal (https://github.com/GRLab/Poppy_GRR) to execute on Poppy. They can be used with the physical robot Poppy or its simulation. 
