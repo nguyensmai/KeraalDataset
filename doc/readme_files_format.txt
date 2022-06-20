@@ -133,7 +133,7 @@ x_pos, y_pos
 
 4. BlazePose 
 
-3.1.  33 human body keypoints for BlazePose
+4.1. The 33 human body keypoints for BlazePose
 The BlazePose skeleton used is a new topology of 33 human body keypoints, which is a superset of COCO, 
 BlazeFace and BlazePalm topologies, from which we have recorded the following joints:
  Nose 
@@ -170,7 +170,7 @@ BlazeFace and BlazePalm topologies, from which we have recorded the following jo
  Left_foot_index 
  Right_foot_index 
 
-3.2. BlazePose joints
+4.2. BlazePose joints
 Each file corresponds to a motion sequence. within the file, is a dictionary of positions. The second level of dictionary is the video frame number. The third level of the dictionary is the joint name. For each joint is a 3D position :
 x_pos, y_pos, z_pos
 Where z_pos represents the depth with respect to the video plane.
