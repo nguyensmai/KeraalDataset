@@ -20,7 +20,18 @@ Our dataset is composed of :
 * the positions and orientations of each joint of the Microsoft Kinect skeleton.  The txt files display in a table, a line per timestamp. The data are presented in ASCII txt format, with space delimiter used for separating the values of positions and orientations of each joint in the order of the skeleton numbering.
 * the 2D positions of each joint of the OpenPose skeleton in the COCO pose output format. The txt files give the x and y positions on each video frame in the format of a dictionary of video frame numbers and joint names.
 * the positions and orientations of each joint of the Vicon skeleton.  The txt files display in a table,  a line per timestamp.
-    
+
+
+
+|Gr. | Annotation | RGB videos | Kinect  | Openpose/Blazepose  | Vicon | Nb rec|
+|1a | xml anvil : err label, bodypart, timespan |mp4, 480x360 |tabular |dictionary | NA | 249|
+|1b | NA |mp4, 480x360 |tabular |dictionary | NA | 1631 |
+|2a | xml anvil : err label, bodypart, timespan |mp4, 480x360 |tabular |dictionary | NA | 51|
+|2b | NA |mp4, 480x360 |tabular |dictionary | NA | 151|
+|3 | error label |avi, 960x544 |tabular |dictionary |tabular | 540|
+
+
+
 ## Draw Skeleton Code
 
 The draw_skeleton folder includes  code such as a python notebook to visualise the skeleton data, and the library code.
