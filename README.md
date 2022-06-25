@@ -23,8 +23,8 @@ Our dataset is composed of :
 
 
 
-|Gr. | Annotation | RGB videos | Kinect  | Openpose/Blazepose  | Vicon | Nb rec|
-| --- | ----------- | --- | ----------- | --- | ----------- || --- |
+|Gr. | Annotation | RGB videos | Kinect  | Openpose/Blazepose  | Vicon | Nb rec |
+| --- | ----------- | --- | ----------- | --- | ----------- | --- |
 |1a | xml anvil : err label, bodypart, timespan |mp4, 480x360 |tabular |dictionary | NA | 249|
 |1b | NA |mp4, 480x360 |tabular |dictionary | NA | 1631 |
 |2a | xml anvil : err label, bodypart, timespan |mp4, 480x360 |tabular |dictionary | NA | 51|
