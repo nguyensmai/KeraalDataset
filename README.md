@@ -31,6 +31,11 @@ Our dataset is composed of :
 |3 | error label |avi, 960x544 |tabular |dictionary |tabular | 540|
 
 
+| Syntax | Description |
+| --- | ----------- |
+| Header | Title |
+| Paragraph | Text |
+
 
 ## Draw Skeleton Code
 
