@@ -32,6 +32,12 @@ Our dataset is composed of :
 |3 | error label |avi, 960x544 |tabular |dictionary |tabular | 540|
 
 
+|Syntax | Description|
+| --- | ----------- |
+| Header | Title |
+| Paragraph | Text |
+
+
 ## Draw Skeleton Code
 
 The draw_skeleton folder includes  code such as a python notebook to visualise the skeleton data, and the library code.
