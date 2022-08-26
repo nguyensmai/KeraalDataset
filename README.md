@@ -45,6 +45,8 @@ Please download the pretrained open_pose model pose_model.pth beforehand. (avail
 The get_skeletons_from_videos folder includes python code to use open_pose on the RGB videos to extract the open_pose skeletons.
 Please download the pretrained open_pose model pose_model.pth beforehand.
 
+THe evaluation_mouvements_gmm_matlab includes an example matlab code to use kinect skeleton data and analyse the movements using Gaussian Mixture Model (GMM) on Riemannian manifold.
+
 ## Annotation files
 
 The annotate_videos folder has information for the annotation. The folder contains :

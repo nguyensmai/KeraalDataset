@@ -14,7 +14,7 @@ In our case, Riemannian manifold proposed is a combination of cartesion spaces (
     Maxime Devanne, Sao Mai Nguyen. Multi-level Motion Analysis for Physical Exercises Assessment in Kinaesthetic Rehabilitation. IEEE-RAS International Conference on Humanoid Robots 2017, Birmingham, UK.
 
 
-#Code
+# Code
 
 This code is in matlab. The two main files are :
 
