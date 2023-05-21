@@ -10,19 +10,24 @@ Groups : 1A= labelled patient coached by Poppy, 1B= unlabelled patient coached b
  In the case of groups 1a, 1b, 2a and 2b, each recording is given a unique number, which is the same for all recording modalities (The nomenclature of the files in the data set includes the following information: groupID/Modality/GroupId-Modality-ExerciseName-SubjectId-RecordingId.extension). In the case of group 3, the name of the file indicates the label of the error and the recording id. The nomenclature of the files in this case is : group3/Modality/G3_ExerciseName_ParticipantId_TrialId_label_RecordingId.extension. 
 ************************************************
 The directories are:
-group1A --- annotations
+group1A --- annotator1
+        |-- annotator2
+        |-- alphapose
         |-- blazepose
         |-- kinect	
         |-- openpose
         |-- videos
 
 group1B --- kinect
+        |-- alphapose
         |-- blazepose
         |-- openpose
         |-- videos
 
 
-group2A --- annotations
+group2A --- annotator1
+        |-- annotator2
+        |-- alphapose
         |-- blazepose
         |-- kinect
         |-- openpose
@@ -30,12 +35,14 @@ group2A --- annotations
 
 
 group2B --- kinect
+        |-- alphapose
         |-- blazepose
         |-- openpose
         |-- videos
 
 `
 group3 --- kinect
+        |-- alphapose
         |-- blazepose
         |-- openpose
         |-- videos
@@ -109,10 +116,10 @@ Each joint's position and quaternion is concatenated according to the order desc
 
 3. OpenPose 
 
-3.1. Coco Model for OpenPose
-The OpenPose skeleton used is the COCO model, from which we have recorded the following joints:
-0. Head
-1. mShoulder
+3.1. Coco_18 Model for OpenPose
+The OpenPose skeleton used is the COCO_18 model as in https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/5e57c2d0181dca49095b0853a2421fa310b77f03/src/openpose/pose/poseParameters.cpp, from which we have recorded the following joints:
+0. Nose 
+1. Neck 
 2. rShoulder
 3. rElbow
 4. rWrist
@@ -125,6 +132,10 @@ The OpenPose skeleton used is the COCO model, from which we have recorded the fo
 11. lHip
 12. lKnee
 13. lAnkle
+14. rEye
+15. lEye
+16. rEar
+17. lEar
 
 3.2. OpenPose joints
 Each file corresponds to a motion sequence. within the file, is a dictionary of positions. The second level of dictionary is the video frame number. The third level of the dictionary is the joint name. For each joint is a 2D position :
@@ -176,6 +187,33 @@ x_pos, y_pos, z_pos
 Where z_pos represents the depth with respect to the video plane.
 
 
-5. Control command files of the robot Poppy to demonstrate the three exercises.
+3. AlphaPose 
+
+3.1. Coco Model 
+The AlphaPose skeleton used is the COCO model (17 body parts as in https://github.com/MVIG-SJTU/AlphaPose/blob/c60106d19afb443e964df6f06ed1842962f5f1f7/docs/output.md), from which we have recorded the following joints:
+0.  Nose
+1.  LEye
+2.  REye
+3.  LEar
+4.  REar
+5.  LShoulder
+6.  RShoulder
+7.  LElbow
+8.  RElbow
+9.  LWrist
+10. RWrist
+11. LHip
+12. RHip
+13. LKnee
+14. Rknee
+15. LAnkle
+16. RAnkle
+
+
+3.2. OpenPose joints
+Each file corresponds to a motion sequence. within the file, is a dictionary of positions. The second level of dictionary is the video frame number. The third level of the dictionary is the joint name. For each joint is a 2D position :
+x_pos, y_pos
+
+6. Control command files of the robot Poppy to demonstrate the three exercises.
 
 They are json files that use the syntax commonly used by the library pypot as described in its documentation (https://docs.poppy-project.org/en/programming/python.html) and can be used with the web-interface developed by the project Keraal (https://github.com/GRLab/Poppy_GRR) to execute on Poppy. They can be used with the physical robot Poppy or its simulation. 
