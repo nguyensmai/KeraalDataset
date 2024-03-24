@@ -16,7 +16,7 @@ The dataset includes RGB video and skeleton files : from the kinect, the vicon, 
 The files constituting the dataset are described in readme_files_description.txt.
 
 
-![exercise1](.draw_skeleton/outvideo.gif)
+![exercise1](./draw_skeleton/outvideo.gif)
 
 
 
