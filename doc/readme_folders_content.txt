@@ -33,6 +33,21 @@ The annotate_videos folder has information for the annotation. The folder contai
 
 Please cite this dataset with the following citation :
 
+Nguyen, S. M., Devanne, M., Remy-Neris, O., Lempereur, M., and Thepaut, A. (2024). A Medical Low-Back Pain Physical Rehabilitation Database for Human Body Movement Analysis. International Joint Conference on Neural Networks. 
+
+
+```
+@inproceedings{Nguyen2024IJCNN,
+	author = {Sao Mai Nguyen and Maxime Devanne and Olivier Remy-Neris and Mathieu Lempereur and Andre Thepaut},
+	booktitle = {International Joint Conference on Neural Networks},
+	title = {A Medical Low-Back Pain Physical Rehabilitation Database for Human Body Movement Analysis},
+	year = {2024}}
+``` 
+
+This dataset was collected during a prospective, controlled, single-blind, two-centre study conducted from October 2017 to May 2019 in two rehabilitation centres in Brittany (France). All participants signed informed consent forms for their participation. The study was written according to the TiDier checklist and descrined in : 
+
+Blanchard, A., Nguyen, S. M., Devanne, M., Simonnet, M., Goff-Pronost, M. L., and Remy-Neris, O. (2022). Technical Feasibility of Supervision of Stretching Exercises by a Humanoid Robot Coach for Chronic Low Back Pain: The R-COOL Randomized Trial. BioMed Research International, 2022(1--10). Hindawi Limited.
+
 
 @article{Blanchard2022BRI,
 	author = {Agathe Blanchard and Sao Mai Nguyen and Maxime Devanne and Mathieu Simonnet and Myriam Le Goff-Pronost and Olivier Remy-Neris},

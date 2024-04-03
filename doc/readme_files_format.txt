@@ -1,4 +1,4 @@
-Readme: Organization of Vicon and Kinect and Poppy control files
+Readme: Organization and format of Vicon, Kinect, video, alphapose openpose and Poppy control files
 
 Authors: Maxime Devanne (maxime.devanne@uha.fr)
          Sao Mai Nguyen (nguyensmai@gmail.com)
@@ -6,12 +6,15 @@ Authors: Maxime Devanne (maxime.devanne@uha.fr)
 
 *************************************************
 The recordings are organized into 5 folders for each participant subgroup, the subfolders correspond to each recording modality, and sub-subfolders correspond to each of the 3 exercise types.
+
 Groups : 1A= labelled patient coached by Poppy, 1B= unlabelled patient coached by Poppy, 2A= labelled healthy adults coached by Poppy, 2B= unlabelled healthy adults coached by Poppy, 3= labelled healthy participants simulating errors.
- In the case of groups 1a, 1b, 2a and 2b, each recording is given a unique number, which is the same for all recording modalities (The nomenclature of the files in the data set includes the following information: groupID/Modality/GroupId-Modality-ExerciseName-SubjectId-RecordingId.extension). In the case of group 3, the name of the file indicates the label of the error and the recording id. The nomenclature of the files in this case is : group3/Modality/G3_ExerciseName_ParticipantId_TrialId_label_RecordingId.extension. 
+
+ In the case of groups 1a, 1b, 2a and 2b, each recording is given a unique number, which is the same for all recording modalities (The nomenclature of the files in the data set includes the following information: groupID/Modality/GroupId-Modality-ExerciseName-SubjectId-RecordingId.extension). In the case of group 3, the name of the file indicates the label of the error and the recording id. The nomenclature of the files in this case is : group3/Modality/G3_Modality_ExerciseName_ParticipantIdTrialId_label_RecordingId.extension. 
 ************************************************
+
 The directories are:
-group1A --- annotator1
-        |-- annotator2
+group1A --- annotatorA
+        |-- annotatorB
         |-- alphapose
         |-- blazepose
         |-- kinect	
@@ -25,8 +28,8 @@ group1B --- kinect
         |-- videos
 
 
-group2A --- annotator1
-        |-- annotator2
+group2A --- annotatorA
+        |-- annotatorB
         |-- alphapose
         |-- blazepose
         |-- kinect
@@ -187,7 +190,7 @@ x_pos, y_pos, z_pos
 Where z_pos represents the depth with respect to the video plane.
 
 
-3. AlphaPose 
+5. AlphaPose 
 
 3.1. Coco Model 
 The AlphaPose skeleton used is the COCO model (17 body parts as in https://github.com/MVIG-SJTU/AlphaPose/blob/c60106d19afb443e964df6f06ed1842962f5f1f7/docs/output.md), from which we have recorded the following joints:
@@ -210,7 +213,7 @@ The AlphaPose skeleton used is the COCO model (17 body parts as in https://githu
 16. RAnkle
 
 
-3.2. OpenPose joints
+5.2. AphaPose joints
 Each file corresponds to a motion sequence. within the file, is a dictionary of positions. The second level of dictionary is the video frame number. The third level of the dictionary is the joint name. For each joint is a 2D position :
 x_pos, y_pos
 
