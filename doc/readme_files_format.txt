@@ -122,7 +122,7 @@ Each joint's position and quaternion is concatenated according to the order desc
 3.1. Coco_18 Model for OpenPose
 The OpenPose skeleton used is the COCO_18 model as in https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/5e57c2d0181dca49095b0853a2421fa310b77f03/src/openpose/pose/poseParameters.cpp, from which we have recorded the following joints:
 0. Nose 
-1. Neck 
+1. mShoulder (Neck) 
 2. rShoulder
 3. rElbow
 4. rWrist
@@ -150,39 +150,39 @@ x_pos, y_pos
 4.1. The 33 human body keypoints for BlazePose
 The BlazePose skeleton used is a new topology of 33 human body keypoints, which is a superset of COCO, 
 BlazeFace and BlazePalm topologies, from which we have recorded the following joints:
- Nose 
- Left_eye_inner 
- Left_eye 
- Left_eye_outer 
- Right_eye_inner 
- Right_eye 
- Right_eye_outer 
- Left_ear 
- Right_ear 
- Mouth_left 
- Mouth_right 
- Left_shoulder 
- Right_shoulder 
- Left_elbow 
- Right_elbow 
- Left_wrist 
- Right_wrist 
- Left_pinky 
- Right_pinky 
- Left_index 
- Right_index 
- Left_thumb 
- Right_thumb 
- Left_hip 
- Right_hip 
- Left_knee 
- Right_knee 
- Left_ankle 
- Right_ankle 
- Left_heel 
- Right_heel 
- Left_foot_index 
- Right_foot_index 
+0. Nose 
+1. Left_eye_inner 
+2. Left_eye 
+3. Left_eye_outer 
+4. Right_eye_inner 
+5. Right_eye 
+6. Right_eye_outer 
+7. Left_ear 
+8. Right_ear 
+9. Mouth_left 
+10. Mouth_right 
+11. Left_shoulder 
+12. Right_shoulder 
+13. Left_elbow 
+14. Right_elbow 
+15. Left_wrist 
+16. Right_wrist 
+17. Left_pinky 
+18. Right_pinky 
+19. Left_index 
+20. Right_index 
+21. Left_thumb 
+22. Right_thumb 
+23. Left_hip 
+24. Right_hip 
+25. Left_knee 
+26. Right_knee 
+27. Left_ankle 
+28. Right_ankle 
+29. Left_heel 
+30. Right_heel 
+31. Left_foot_index 
+32. Right_foot_index 
 
 4.2. BlazePose joints
 Each file corresponds to a motion sequence. within the file, is a dictionary of positions. The second level of dictionary is the video frame number. The third level of the dictionary is the joint name. For each joint is a 3D position :
