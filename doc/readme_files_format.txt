@@ -76,7 +76,7 @@ The Vicon files are acquired using Vicon Motion Capture System. 17 targets from 
 16. Left Tibia
 
 1.2 Vicon files
-Each Vicon file corresponds to a motion sequence. Within the file, each row represents a frame and includes 119 floating values corresponding to the 3D global position and the global orientation (Quaternion) of each target:
+Each Vicon file corresponds to a motion sequence. Within the file, each row represents a frame at 60fps and includes 119 floating values corresponding to the 3D global position and the global orientation (Quaternion) of each target:
 x_pos y_pos z_pos x_quat y_quat z_quat w_quat
 Each target's position and quaternion is concatenated according to the order described in 1.1
 
@@ -112,7 +112,7 @@ The Kinect skeleton includes 25 joints:
 24. ThumbRight
 
 2.2 Kinect files
-Each Kinect file corresponds to a motion sequence. Within the file, each row represents a frame and includes 175 floating values corresponding to the 3D position and the orientation (Quaternion) of each joint:
+Each Kinect file corresponds to a motion sequence. Within the file, each row represents a frame at 30 fps and includes 175 floating values corresponding to the 3D position and the orientation (Quaternion) of each joint:
 x_pos y_pos z_pos x_quat y_quat z_quat w_quat
 Each joint's position and quaternion is concatenated according to the order described in 2.2
 
@@ -141,7 +141,7 @@ The OpenPose skeleton used is the COCO_18 model as in https://github.com/CMU-Per
 17. lEar
 
 3.2. OpenPose joints
-Each file corresponds to a motion sequence. within the file, is a dictionary of positions. The second level of dictionary is the video frame number. The third level of the dictionary is the joint name. For each joint is a 2D position :
+Each file corresponds to a motion sequence. within the file, is a dictionary of positions. The second level of dictionary is the video frame number, recorded at 30 fps. The third level of the dictionary is the joint name. For each joint is a 2D position :
 x_pos, y_pos
 
 
@@ -185,7 +185,7 @@ BlazeFace and BlazePalm topologies, from which we have recorded the following jo
 32. Right_foot_index 
 
 4.2. BlazePose joints
-Each file corresponds to a motion sequence. within the file, is a dictionary of positions. The second level of dictionary is the video frame number. The third level of the dictionary is the joint name. For each joint is a 3D position :
+Each file corresponds to a motion sequence. within the file, is a dictionary of positions. The second level of dictionary is the video frame number, recorded at 30 fps. The third level of the dictionary is the joint name. For each joint is a 3D position :
 x_pos, y_pos, z_pos
 Where z_pos represents the depth with respect to the video plane.
 
@@ -214,7 +214,7 @@ The AlphaPose skeleton used is the COCO model (17 body parts as in https://githu
 
 
 5.2. AphaPose joints
-Each file corresponds to a motion sequence. within the file, is a dictionary of positions. The second level of dictionary is the video frame number. The third level of the dictionary is the joint name. For each joint is a 2D position :
+Each file corresponds to a motion sequence. within the file, is a dictionary of positions. The second level of dictionary is the video frame number, recorded at 30 fps. The third level of the dictionary is the joint name. For each joint is a 2D position :
 x_pos, y_pos
 
 6. Control command files of the robot Poppy to demonstrate the three exercises.

@@ -9,11 +9,13 @@ The Keraal dataset is a medical database of clinical patients carrying out low b
 
 This repository  includes the accompanying code and the documentation for the Keraal Dataset.
 
+The detailed description of all files and folders is in doc/readme_folders_content.txt.
 
 ## Dataset content
 
 The dataset includes RGB video and skeleton files : from the kinect, the vicon, open-pose and blazepose. It also includes annotation files from 5 annotators.  
-The files constituting the dataset are described in readme_files_description.txt.
+The files constituting the dataset are described in doc/readme_files_format.txt.
+The dataset for group 1 has been collected from patients during a 3-weeks long rehabilitation program, with daily sessions of half-an-hour that are recorded for this dataset. Therefore, patients are recorded 15 days over 3 weeks. To analyse patients' long-term performance, we indicate the chronological order of patient recordings  in doc/readme_session_day.txt.
 
 
 ![exercise1](./draw_skeleton/outvideo.gif)
@@ -31,13 +33,13 @@ Our dataset is composed of :
 
 
 
-|Group | Annotation | RGB videos | Kinect  | Openpose/Blazepose  | Vicon | Nb rec |
+|Group | Annotation | RGB videos (30 fps) | Kinect  (30 fps) | Openpose/Blazepose/Alphapose (30fps) | Vicon (60 fps) | Nb rec |
 | --- | ----------- | --- | ----------- | --- | ----------- | --- |
-|1a | xml anvil : err label, bodypart, timespan |mp4, 480x360 |tabular |dictionary | NA | 249|
-|1b | NA |mp4, 480x360 |tabular |dictionary | NA | 1631 |
-|2a | xml anvil : err label, bodypart, timespan |mp4, 480x360 |tabular |dictionary | NA | 51|
-|2b | NA |mp4, 480x360 |tabular |dictionary | NA | 151|
-|3 | error label |avi, 960x544 |tabular |dictionary |tabular | 540|
+|1a (patients, annotated)| xml anvil : err label, bodypart, timespan |mp4, 480x360 |tabular |dictionary | NA | 249|
+|1b (patients)| NA |mp4, 480x360 |tabular |dictionary | NA | 1631 |
+|2a (healthy, annotated) | xml anvil : err label, bodypart, timespan |mp4, 480x360 |tabular |dictionary | NA | 51|
+|2b (healthy) | NA |mp4, 480x360 |tabular |dictionary | NA | 151|
+|3 (healthy, simulate errors)| error label |avi, 960x544 |tabular |dictionary |tabular  | 540|
 
 
 
